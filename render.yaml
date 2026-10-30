@@ -2,7 +2,7 @@ services:
   - type: web
     name: hrgenius
     runtime: docker
-    plan: starter
+    plan: free
     healthCheckPath: /api/health
     envVars:
       - key: NODE_ENV
@@ -13,7 +13,3 @@ services:
         value: /app/storage/hrgenius.sqlite
       - key: TRUST_PROXY
         value: "1"
-    disk:
-      name: hrgenius-data
-      mountPath: /app/storage
-      sizeGB: 1
