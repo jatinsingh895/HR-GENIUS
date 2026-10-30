@@ -1,0 +1,40 @@
+{
+  "employees": [
+    {"id":"HR-1024","name":"Olivia Chen","email":"olivia.chen@acme.co","role":"Product Designer","department":"Design","location":"New York","joined":"2023-04-12","salary":96000,"status":"Active","color":"pink"},
+    {"id":"HR-1023","name":"Marcus Johnson","email":"marcus.j@acme.co","role":"Engineering Lead","department":"Engineering","location":"San Francisco","joined":"2022-11-07","salary":142000,"status":"Active","color":"blue"},
+    {"id":"HR-1022","name":"Sophia Patel","email":"sophia.p@acme.co","role":"People Partner","department":"People","location":"New York","joined":"2024-01-15","salary":88000,"status":"On leave","color":"green"},
+    {"id":"HR-1021","name":"Ethan Williams","email":"ethan.w@acme.co","role":"Marketing Manager","department":"Marketing","location":"Austin","joined":"2023-08-21","salary":105000,"status":"Active","color":"orange"},
+    {"id":"HR-1020","name":"Ava Thompson","email":"ava.t@acme.co","role":"Financial Analyst","department":"Finance","location":"New York","joined":"2024-02-05","salary":82000,"status":"Active","color":"purple"},
+    {"id":"HR-1019","name":"Noah Kim","email":"noah.k@acme.co","role":"Software Engineer","department":"Engineering","location":"Remote","joined":"2023-06-19","salary":118000,"status":"Active","color":"blue"},
+    {"id":"HR-1018","name":"Isabella Garcia","email":"isabella.g@acme.co","role":"UX Researcher","department":"Design","location":"Austin","joined":"2022-09-12","salary":91000,"status":"Active","color":"pink"},
+    {"id":"HR-1017","name":"Liam Brown","email":"liam.b@acme.co","role":"Recruiter","department":"People","location":"Remote","joined":"2023-03-28","salary":76000,"status":"Inactive","color":"green"},
+    {"id":"HR-1016","name":"Mia Wilson","email":"mia.w@acme.co","role":"Account Executive","department":"Sales","location":"Chicago","joined":"2024-04-08","salary":97000,"status":"Active","color":"orange"}
+  ],
+  "candidates": [
+    {"id":1,"name":"Sophie Turner","initials":"ST","role":"Senior Product Designer","stage":"Applied","date":"Oct 12","score":"92%","color":"pink"},
+    {"id":2,"name":"Daniel Park","initials":"DP","role":"Frontend Engineer","stage":"Applied","date":"Oct 13","score":"88%","color":"blue"},
+    {"id":3,"name":"Amara Okafor","initials":"AO","role":"People Operations Lead","stage":"Screening","date":"Oct 10","score":"95%","color":"green"},
+    {"id":4,"name":"Lucas Meyer","initials":"LM","role":"Senior Product Designer","stage":"Screening","date":"Oct 11","score":"86%","color":"orange"},
+    {"id":5,"name":"Priya Sharma","initials":"PS","role":"Frontend Engineer","stage":"Interview","date":"Oct 14","score":"91%","color":"purple"},
+    {"id":6,"name":"Oliver Scott","initials":"OS","role":"Data Analyst","stage":"Interview","date":"Oct 15","score":"84%","color":"blue"},
+    {"id":7,"name":"Elena Rossi","initials":"ER","role":"Product Designer","stage":"Offer","date":"Oct 9","score":"96%","color":"pink"}
+  ],
+  "reviews": [
+    {"name":"Olivia Chen","role":"Product Designer","score":4.8,"progress":92,"color":"pink"},
+    {"name":"Marcus Johnson","role":"Engineering Lead","score":4.6,"progress":86,"color":"blue"},
+    {"name":"Ethan Williams","role":"Marketing Manager","score":4.3,"progress":78,"color":"orange"}
+  ],
+  "goals": [
+    {"title":"Ship Q4 product roadmap","owner":"Olivia Chen","progress":78,"status":"In progress"},
+    {"title":"Reduce onboarding time by 20%","owner":"Sophia Patel","progress":64,"status":"In progress"},
+    {"title":"Launch customer insights program","owner":"Ethan Williams","progress":92,"status":"In progress"},
+    {"title":"Complete security certification","owner":"Marcus Johnson","progress":45,"status":"In progress"}
+  ],
+  "payruns": [
+    {"id":"PR-2026-09","period":"September 2026","employees":9,"gross":74250,"payDate":"2026-09-30","status":"Paid"},
+    {"id":"PR-2026-08","period":"August 2026","employees":9,"gross":74250,"payDate":"2026-08-31","status":"Paid"}
+  ],
+  "leaves": [],
+  "onboarding": [],
+  "settings": []
+}

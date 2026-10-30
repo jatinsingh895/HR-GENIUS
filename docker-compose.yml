@@ -1,0 +1,18 @@
+services:
+  hrgenius:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      NODE_ENV: ${NODE_ENV:-development}
+      HOST: 0.0.0.0
+      PORT: 3000
+      DATABASE_PATH: /app/storage/hrgenius.sqlite
+      APP_URL: ${APP_URL:-http://localhost:3000}
+      TRUST_PROXY: ${TRUST_PROXY:-0}
+    volumes:
+      - hrgenius-data:/app/storage
+
+volumes:
+  hrgenius-data:

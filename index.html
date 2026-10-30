@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f8fc" />
+  <meta name="description" content="HRGenius helps you manage people, hiring, payroll and performance in one place." />
+  <title>HRGenius — People, made simpler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="auth.css" />
+  <link rel="stylesheet" href="settings.css" />
+</head>
+<body>
+  <div id="authRoot"></div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard" aria-label="HRGenius home"><span class="brand-mark">h</span><span class="brand-name">hr<span>genius</span></span></a>
+      <div class="workspace-switch"><div class="workspace-avatar">A</div><div class="workspace-copy"><strong>Acme Studio</strong><span>Workspace</span></div><span class="chevron">⌄</span></div>
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-item active" href="#dashboard" data-page="dashboard"><span class="nav-icon">◫</span>Overview</a>
+        <a class="nav-item" href="#employees" data-page="employees"><span class="nav-icon">♙</span>Employees <span class="nav-count" id="employeeNavCount">0</span></a>
+        <a class="nav-item" href="#recruitment" data-page="recruitment"><span class="nav-icon">⌕</span>Recruitment <span class="nav-dot"></span></a>
+        <a class="nav-item" href="#payroll" data-page="payroll"><span class="nav-icon">▤</span>Payroll</a>
+        <a class="nav-item" href="#performance" data-page="performance"><span class="nav-icon">↗</span>Performance</a>
+        <a class="nav-item" href="#leave" data-page="leave"><span class="nav-icon">☼</span>Time off</a>
+        <a class="nav-item" href="#onboarding" data-page="onboarding"><span class="nav-icon">✦</span>Onboarding</a>
+        <a class="nav-item" href="#analytics" data-page="analytics"><span class="nav-icon">▥</span>Analytics</a>
+      </nav>
+      <div class="nav-label tools-label">TOOLS</div>
+      <nav class="main-nav"><a class="nav-item" href="#settings" data-page="settings"><span class="nav-icon">⚙</span>Settings</a><a class="nav-item" href="#team" data-page="team"><span class="nav-icon">♧</span>Team access</a><a class="nav-item" href="#help" data-page="help"><span class="nav-icon">?</span>Help & support</a></nav>
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-tip"><div class="tip-icon">✦</div><strong>People first, always.</strong><p>Good things happen when your team has room to grow.</p><button data-page="performance">Explore performance <span>↗</span></button></div>
+      <button class="profile-card" id="profileButton"><span class="avatar avatar-purple">JD</span><span class="profile-copy"><strong id="sideUserName">Jordan Davis</strong><small id="sideUserRole">Workspace Owner</small></span><span class="profile-dots">⇥</span></button>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-menu" id="mobileMenu" aria-label="Toggle menu">☰</button><div class="breadcrumbs"><span id="workspaceCrumb">Workspace</span><span class="crumb-slash">/</span><strong id="breadcrumbTitle">Overview</strong></div><div class="top-actions"><label class="global-search"><span>⌕</span><input id="globalSearch" placeholder="Search anything..." /><kbd>⌘ K</kbd></label><button class="icon-button" id="helpButton" aria-label="Help">?</button><button class="icon-button notification-button" id="notificationButton" aria-label="Notifications">♧<i></i></button><span class="top-divider"></span><button class="top-profile" id="topProfile"><span class="avatar avatar-purple">JD</span><span id="topUserName">Jordan Davis</span><span class="chevron">⌄</span></button></div></header>
+      <div id="pageContent" class="page-content"></div>
+    </main>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toastRoot" class="toast-root" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>

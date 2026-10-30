@@ -1,0 +1,13 @@
+{
+  "name": "hrgenius-hrms",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multi-workspace HR management app with secure login and SQLite storage.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}
